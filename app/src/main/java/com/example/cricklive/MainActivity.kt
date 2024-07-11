@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        Toast.makeText(this,"hii",Toast.LENGTH_SHORT).show()
         Toast.makeText(this,"Hello",Toast.LENGTH_SHORT).show()
         RetrofitInstance.api.getLiveScore("9055b29a-2850-4dae-9f5d-afc7d37599c0").enqueue(object : Callback<CricketData?> {
             override fun onResponse(call: Call<CricketData?>, response: Response<CricketData?>) {
